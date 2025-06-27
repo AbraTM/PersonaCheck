@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Classifier</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <h1>Personality Classifier</h1>
+    <form>
+        <div class="slider-container">
+            <label for="inputValue">What amount of time do you spent alone in a day?</label>
+            <br>
+            <input type="range" min="0" max="24" id="inputValue">
+            <output id="outputValue" for="inputValue"></output>
+        </div>
+        <div class="slider-container">
+            <label for="inputValue">What amount of time do you spent outside in a day?</label>
+            <br>
+            <input type="range" min="0" max="24" id="inputValue">
+            <output id="outputValue" for="inputValue"></output>
+        </div>
+        <div class="slider-container">
+            <label for="inputValue">How likely are you to attend social events?</label>
+            <br>
+            <input type="range" min="0" max="24" id="inputValue">
+            <output id="outputValue" for="inputValue"></output>
+        </div>
+        <div class="slider-container">
+            <label for="inputValue">How many close friends do you have?</label>
+            <br>
+            <input type="range" min="0" max="24" id="inputValue">
+            <output id="outputValue" for="inputValue"></output>
+        </div>
+        <div class="slider-container">
+            <label for="inputValue">How often do you post on social media?</label>
+            <br>
+            <input type="range" min="0" max="24" id="inputValue">
+            <output id="outputValue" for="inputValue"></output>
+        </div>
+        <div class="radio-container">
+            <label>Do you often struggle with stage fear?</label>
+            <br>
+            <input type="radio" id="stage_fear_yes" name="Stage_fear" value="yes">
+            <label for="stage_fear_yes">Yes</label>
+            <input type="radio" id="stage_fear_no" name="Stage_fear" value="no">
+            <label for="stage_fear_no">No</label>
+        </div>
+        <div class="radio-container">
+            <label>Do you often feel drained after socializing?</label>
+            <br>
+            <input type="radio" id="drained_after_socailizing_yes" name="drained_after_socailizing" value="yes">
+            <label for="drained_after_socailizing_yes">Yes</label>
+            <input type="radio" id="drained_after_socailizing_no" name="drained_after_socailizing" value="no">
+            <label for="drained_after_socailizing_no">No</label>
+        </div>
+    </form>
+
+    <!-- Scripts -->
+    <script src="../static/slider.js"></script>
+</body>
+</html>

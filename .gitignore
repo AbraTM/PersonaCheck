@@ -1,0 +1,15 @@
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+
+# Trained model artifacts
+models/*.pkl
+
+# VS Code
+.vscode/
+
+# Flask auto-generated files (if any)
+instance/
+*.log
