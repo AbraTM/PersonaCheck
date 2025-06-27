@@ -1,6 +1,13 @@
-const inputValue = document.getElementById("inputValue");
-const outputValue = document.getElementById("outputValue");
+// Handling Slider Values
 
-inputValue.addEventListener("input", function() {
-    outputValue.textContent = inputValue.value;
+const inputSliders = document.querySelectorAll(".slider");
+
+inputSliders.forEach((slider) => {
+    const output = document.getElementById(`output${slider.id}`);
+    if(output){
+        output.textContent = slider.value;
+        slider.addEventListener("input", () => {
+            output.textContent = slider.value;
+        })
+    }
 });
