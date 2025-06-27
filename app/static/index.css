@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #27374D;
+    --primary-color-light: #526D82;
+    --secondary-color: #9DB2BF;
+    --secondary-color-light: #DDE6ED;
+    --heading-color: white
+}
+
+body{
+    background-color: var(--secondary-color-light);
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding-left: 20px;
+    padding-block: 10px 5px;
+}
+
+.form-cn{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 45px 40px;
+}
+
+.info-box{
+    background-color: white;
+    height: 75%;
+    border-radius: 10px;
+    border: 0.5px solid var(--secondary-color);
+    padding: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.info-box h2{
+    margin-bottom: 20px;
+}
+
+.info-box a{
+    color: black;
+}
+
+.info-img{
+    margin-top: 20px;
+    width: 100%
+}
+
+.my-form{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label{
+    font-weight: 600;
+}
+
+.radio-btn{
+    margin: 10px 7px 0px 0px;
+}
+
+.radio-option{
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    width: 70%;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    cursor: grab;
+    transition: background 1s ease-in-out;
+}
+
+output{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    text-align: center;
+    width: 50px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+
+.submit-btn{
+    font-family: "Oswald", sans-serif;
+    font-size: 26px;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding: 0px 25px;
+    border: none;
+    outline: none;
+    width: fit-content;
+    border-radius: 2px;
+}

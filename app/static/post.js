@@ -46,6 +46,6 @@ async function postData(data) {
         console.log(result)
         return result;
     } catch (error) {
-        console.log("Fetch failed : ", error);
+        console.log("Fetch failed : \n", error);
     }
 }
