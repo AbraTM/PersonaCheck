@@ -16,14 +16,21 @@ body{
     background-color: var(--secondary-color-light);
 }
 
-h1{
+header{
     font-family: "Oswald", sans-serif;
-    font-size: 50px;
     background-color: var(--primary-color);
     color: var(--heading-color);
-    padding-left: 20px;
-    padding-block: 10px 5px;
+    padding: 20px 40px;
+    font-size: 40px;
 }
+
+header h3{
+    text-align: end;
+    width: 41%;
+    font-weight: 200;
+    font-size: 20px;
+}
+
 
 .form-cn{
     display: grid;
