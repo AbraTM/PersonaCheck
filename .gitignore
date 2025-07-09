@@ -4,9 +4,6 @@
 # Virtual Environment
 venv/
 
-# Trained model artifacts
-models/*.pkl
-
 # VS Code
 .vscode/
 
