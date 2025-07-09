@@ -130,4 +130,33 @@ output{
     outline: none;
     width: fit-content;
     border-radius: 2px;
+    transition: 0.2s ease-in-out;
+}
+.submit-btn:hover{
+    scale: 1.02;
+    box-shadow: 5px 5px 10px 0px var(--primary-color);
+}
+
+.result-cn{
+    font-family: "Oswald", sans-serif;
+    width: 35%;
+    margin-inline: 40px;
+    padding: 20px 50px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    display: none;
+}
+
+footer{
+    margin-top: 200px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+footer p{
+    font-family: "Oswald", sans-serif;
+    padding: 20px 60px;
+    text-align: end;
+    color: white;
 }

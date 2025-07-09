@@ -18,14 +18,19 @@ document.getElementById("PersonalityForm").addEventListener("submit", async (e) 
     data.Drained_after_socializing =drainedAfterSocailzingRadio ? (drainedAfterSocailzingRadio.value === "yes" ? 1 : 0) : null;
 
     try {
-        console.log(data)
         const result = await postData(data)
         if(result){
-            document.getElementById("submission_message").textContent = "Submission Successfull!!";
-            document.getElementById("result_container").innerHTML = `
-                <h2>${result.prediction === 1 ? "Extroverted" : "Introverted"}</h2>
+            // document.getElementById("submission_message").textContent = "Submission Successfull!!";
+            document.getElementById("result_container").innerHTML = result === 1 ? `
+                <h1>Introverted</h1>
+                <p>You thrive in peaceful moments and draw energy from your own inner world. Depth over noise, always.</p>
+            ` : 
+            `
+                <h1>Extroverted</h1>
+                <p>You light up around others and find energy in new experiences and lively connections. The world is your stage!</p>
             `
         }
+        document.getElementById("result_container").style.display = "block";
     } catch (error) {
         document.getElementById("submission_message").textContent = `Submission Failed!!\nError : ${error.message}`;
     }
@@ -42,8 +47,7 @@ async function postData(data) {
         if(!res.ok){
             throw new Error(`Server responded with code ${res.status}`);
         }
-        const result = res.json();
-        console.log(result)
+        const result = await res.json();
         return result;
     } catch (error) {
         console.log("Fetch failed : \n", error);
